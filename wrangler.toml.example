@@ -1,0 +1,17 @@
+name = "sdxl-telegram-worker"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+[[kv_namespaces]]
+binding = "BACKEND_KV"
+id = "replace-with-kv-namespace-id"
+
+# Set with `wrangler secret put`:
+# TELEGRAM_BOT_TOKEN
+# TELEGRAM_WEBHOOK_SECRET
+# REGISTRATION_SECRET
+
+# Optional comma-separated Telegram numeric user IDs:
+# [vars]
+# ALLOWED_TELEGRAM_USER_IDS = "123456789,987654321"
+# COLAB_NOTEBOOK_URL = "https://colab.research.google.com/github/<you>/sdxl-telegram-worker/blob/main/colab/sdxl_backend.ipynb"
